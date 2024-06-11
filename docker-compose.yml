@@ -1,0 +1,7 @@
+services:
+   postgres:
+     container_name: ms_pg_sql
+     image: postgres
+     environment:
+       POSTGRES_USER: felix
+       POSTGRES_PASSWORD: 7991@felix
