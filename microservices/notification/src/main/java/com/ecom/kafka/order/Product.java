@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.kafka.order;
+package com.ecom.kafka.order;
 
 import java.math.BigDecimal;
 

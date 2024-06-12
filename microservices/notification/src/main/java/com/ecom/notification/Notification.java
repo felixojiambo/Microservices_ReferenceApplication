@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.notification;
+package com.ecom.notification;
 
 import com.alibou.ecommerce.kafka.order.OrderConfirmation;
 import com.alibou.ecommerce.kafka.payment.PaymentConfirmation;

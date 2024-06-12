@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.notification;
+package com.ecom.notification;
 
 import com.alibou.ecommerce.payment.PaymentMethod;
 

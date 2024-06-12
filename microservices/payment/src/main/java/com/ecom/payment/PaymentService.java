@@ -1,7 +1,7 @@
-package com.alibou.ecommerce.payment;
+package com.ecom.payment;
 
-import com.alibou.ecommerce.notification.NotificationProducer;
-import com.alibou.ecommerce.notification.PaymentNotificationRequest;
+import com.ecom.notification.NotificationProducer;
+import com.ecom.notification.PaymentNotificationRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.configuration;
+package com.ecom.configuration;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;

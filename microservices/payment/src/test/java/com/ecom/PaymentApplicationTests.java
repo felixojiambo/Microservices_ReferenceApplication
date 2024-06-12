@@ -1,10 +1,10 @@
-package com.alibou.gateway;
+package com.ecom;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayApplicationTests {
+class PaymentApplicationTests {
 
 	@Test
 	void contextLoads() {

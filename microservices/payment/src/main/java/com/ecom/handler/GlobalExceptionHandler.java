@@ -1,6 +1,6 @@
-package com.alibou.ecommerce.handler;
+package com.ecom.handler;
 
-import com.alibou.ecommerce.exception.BusinessException;
+import com.ecom.exception.BusinessException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

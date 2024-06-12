@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.notification;
+package com.ecom.notification;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

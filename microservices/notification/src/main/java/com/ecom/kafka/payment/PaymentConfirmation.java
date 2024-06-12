@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.kafka.payment;
+package com.ecom.kafka.payment;
 
 import java.math.BigDecimal;
 

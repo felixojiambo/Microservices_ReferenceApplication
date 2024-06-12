@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.email;
+package com.ecom.email;
 
 import com.alibou.ecommerce.kafka.order.Product;
 import jakarta.mail.MessagingException;

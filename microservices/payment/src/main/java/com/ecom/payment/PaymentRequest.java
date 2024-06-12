@@ -1,4 +1,4 @@
-package com.alibou.ecommerce.payment;
+package com.ecom.payment;
 
 import java.math.BigDecimal;
 
