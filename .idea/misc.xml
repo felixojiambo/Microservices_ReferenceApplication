@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/microservices/customer/pom.xml" />
         <option value="$PROJECT_DIR$/microservices/product/pom.xml" />
         <option value="$PROJECT_DIR$/microservices/order/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/notification/src/main/java/com/ecom/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/payment/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
