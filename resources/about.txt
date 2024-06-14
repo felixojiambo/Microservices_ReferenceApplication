@@ -97,12 +97,8 @@ Section 11 - API Gateway
 	- Git commit
 
 
-Section 12 - Exercice
-	- Establish a communication with all the microservices
-		--> should be devided and detailed
-	- Solution
 
-Section 13 - Asynchronous communication
+Section 12 - Asynchronous communication
 	- Setup RabbitMQ (docker-compose)
 	- Run RabbitMQ
 	- What is async communication?
@@ -114,10 +110,10 @@ Section 13 - Asynchronous communication
 	- Exercice: Follow the previous steps and publish a message on payment-queue
 	- Solution
 
-Section 14 - Play and Observe
+Section 13 - Play and Observe
 	- Playing with the application
 
-Section 15 - Notification service & Java mail
+Section 14 - Notification service & Java mail
 	- Configure and install maildev (docker-compose)
 	- Create Notification service
 	- Configure Java-mail
@@ -127,7 +123,7 @@ Section 15 - Notification service & Java mail
 	- Exercice: consume payment-queue and send email
 	- Solution
 
-Section 16 - Distributed Tracing
+Section 15 - Distributed Tracing
 	- Distributed Tracing
 	- Adding Sleuth
 	- Zipkin
@@ -136,7 +132,7 @@ Section 16 - Distributed Tracing
 	- Zipkin Dashboard
 	- Section End Git Commit
 
-Section 17 - Distributed documentation
+Section 16 - Distributed documentation
 	- Expose services documentation through API Gateway
 
 
