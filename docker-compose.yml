@@ -31,14 +31,14 @@ services:
 
   mongodb:
     image: mongo
-    container_name: mongo_db
+    container_name: ms_mongo
     ports:
       - 27017:27017
     volumes:
-      - mongo_data:/data/db
+      - mongo_data:/data
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=felix
-      - MONGO_INITDB_ROOT_PASSWORD=7991@feliX
+      - MONGO_INITDB_ROOT_USERNAME=ms_reference
+      - MONGO_INITDB_ROOT_PASSWORD=ms_ref@rence
 
   mongo-express:
     image: mongo-express
