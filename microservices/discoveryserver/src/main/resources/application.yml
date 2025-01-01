@@ -1,0 +1,12 @@
+# Application Name
+spring:
+  application:
+    name: discovery-service
+  # Import Configuration from Config Server
+  config:
+    import: optional:configserver:http://localhost:8888
+
+# Logging Level
+logging:
+  level:
+    root: INFO
