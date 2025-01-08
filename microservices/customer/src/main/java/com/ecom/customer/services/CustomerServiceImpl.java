@@ -1,28 +1,34 @@
-package com.ecom.customer.customer;
+package com.ecom.customer.services;
+import com.ecom.customer.mapper.CustomerMapper;
+import com.ecom.customer.dtos.CustomerRequest;
+import com.ecom.customer.dtos.CustomerResponse;
 import com.ecom.customer.exception.CustomerNotFoundException;
+import com.ecom.customer.models.Customer;
+import com.ecom.customer.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
 @Service
 @RequiredArgsConstructor
-public class CustomerService {
+public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepository repository;
     private final CustomerMapper mapper;
 
+    @Override
     public String createCustomer(CustomerRequest request) {
         var customer = this.repository.save(mapper.toCustomer(request));
         return customer.getId();
     }
 
+    @Override
     public void updateCustomer(CustomerRequest request) {
         var customer = this.repository.findById(request.id())
                 .orElseThrow(() -> new CustomerNotFoundException(
-                        String.format("Cannot update customer:: No customer found with the provided ID: %s", request.id())
+                        String.format("Cannot update customer: No customer found with the provided ID: %s", request.id())
                 ));
         mergeCustomer(customer, request);
         this.repository.save(customer);
@@ -40,24 +46,27 @@ public class CustomerService {
         }
     }
 
+    @Override
     public List<CustomerResponse> findAllCustomers() {
-        return  this.repository.findAll()
+        return this.repository.findAll()
                 .stream()
                 .map(this.mapper::fromCustomer)
                 .collect(Collectors.toList());
     }
 
+    @Override
     public CustomerResponse findById(String id) {
         return this.repository.findById(id)
                 .map(mapper::fromCustomer)
                 .orElseThrow(() -> new CustomerNotFoundException(String.format("No customer found with the provided ID: %s", id)));
     }
 
+    @Override
     public boolean existsById(String id) {
-        return this.repository.findById(id)
-                .isPresent();
+        return this.repository.findById(id).isPresent();
     }
 
+    @Override
     public void deleteCustomer(String id) {
         this.repository.deleteById(id);
     }

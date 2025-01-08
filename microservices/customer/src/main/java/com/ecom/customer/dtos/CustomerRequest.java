@@ -1,4 +1,5 @@
-package com.ecom.customer.customer;
+package com.ecom.customer.dtos;
+import com.ecom.customer.models.Address;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 

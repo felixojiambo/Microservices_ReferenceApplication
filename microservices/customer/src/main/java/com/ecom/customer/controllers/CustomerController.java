@@ -1,4 +1,7 @@
-package com.ecom.customer.customer;
+package com.ecom.customer.controllers;
+import com.ecom.customer.services.CustomerServiceImpl;
+import com.ecom.customer.dtos.CustomerRequest;
+import com.ecom.customer.dtos.CustomerResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CustomerController {
 
-    private final CustomerService service;
+    private final CustomerServiceImpl service;
 
     @PostMapping
     public ResponseEntity<String> createCustomer(

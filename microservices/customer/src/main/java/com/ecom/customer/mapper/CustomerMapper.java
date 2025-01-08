@@ -1,4 +1,7 @@
-package com.ecom.customer.customer;
+package com.ecom.customer.mapper;
+import com.ecom.customer.dtos.CustomerRequest;
+import com.ecom.customer.dtos.CustomerResponse;
+import com.ecom.customer.models.Customer;
 import org.springframework.stereotype.Component;
 
 @Component

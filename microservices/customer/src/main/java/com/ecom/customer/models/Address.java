@@ -1,4 +1,4 @@
-package com.ecom.customer.customer;
+package com.ecom.customer.models;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
